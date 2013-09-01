@@ -16,7 +16,11 @@ my $builder = Module::Build->new(
     },
     requires => {
         'perl' => '5.008001',
+        'strict' => 0,
+        'warnings' => 0,
+        'utf8' => 0,
         'Carp' => 0,
+        'Class::Accessor::Lite' => 0,
     },
     add_to_cleanup      => [ 'Text-MatchedPosition-*' ],
     meta_merge     => {
