@@ -108,6 +108,14 @@ return the count of offset number. The beginning is C<1>;
 
 If regex is no match, C<offset> to be C<undef>.
 
+=head2 text
+
+getter for text lines
+
+=head2 regex
+
+getter for regex
+
 
 =head1 REPOSITORY
 
