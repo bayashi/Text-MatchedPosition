@@ -55,7 +55,7 @@ sub _position {
     my $line_count = ($match =~ s/\n/\n/g);
     $line_count++;
 
-    my $offset = length( (split /\n/, $match)[-1] || '' ) + 1;
+    my $offset = length( (split /\n/, $match, -1)[-1] || '' ) + 1;
 
     $self->{position} = [$line_count, $offset];
 }
