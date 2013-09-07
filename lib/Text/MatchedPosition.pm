@@ -2,9 +2,6 @@ package Text::MatchedPosition;
 use strict;
 use warnings;
 use utf8;
-use Class::Accessor::Lite (
-    ro => [qw/text regex/],
-);
 
 our $VERSION = '0.02';
 
@@ -23,6 +20,10 @@ sub new {
 
     bless $args, $class;
 }
+
+sub text { $_[0]->{text} }
+
+sub regex { $_[0]->{regex} }
 
 sub line {
     my $self = shift;
